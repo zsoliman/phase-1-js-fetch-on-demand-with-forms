@@ -16,7 +16,7 @@ const init = () => {
 
                 title.innerText = data.title;
                 summary.innerText = data.summary;
-            })
+            }).catch(console.log('you probably forgot to run the json server')) //runs only if fetch fails (catches an error)
     })
 }
 
